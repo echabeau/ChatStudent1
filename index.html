@@ -95,7 +95,31 @@
     </footer>
 
     <!-- Put Chat Widget 1 Line Below -->
-    
+    <script type="text/javascript">
+
+  (function(w, d, x, id){
+
+    s=d.createElement('script');
+
+    s.src='https://student1ech-jan26.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+
+    s.async=1;
+
+    s.id=id;
+
+    d.getElementsByTagName('head')[0].appendChild(s);
+
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+
+  })(window, document, 'amazon_connect', '8ede9acc-02c3-4ad7-8a2a-76ed2ea6cb74');
+
+  amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+
+  amazon_connect('snippetId', 'QVFJREFIZ3JjM0V2VVBOckdYcW1jeFRyRHU0N1IwL0hXQXhoMlF6RE5FSm4wc01nUUFIaFV0SUxMUFdneGNXQ0JjRG95NXNIQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNeXA0WVBCRXgwbVdlY1hEeEFnRVFnQ3Y1dFpMb20zZ1ZnNXRiQzZTZkxhSWdQNVpZUXhhWWRqcTFJWFBtVjFTOWRkU2RIM0g4TW1LMzFpQ006OlY0KzFyd21ZQ3E4Y3FPR3dDbWxuakNGcmpmTmVPVkVmMkw3OGkrWk44enFsNkFUUXdXOHdKUXhjbXdyeDA3QlAra0w0ZU9Xc1loRmJsMThxUHVXNnJEK3hIOVNwSUtYT1J4QmF2SThwcFFkdXluK0JnU1pHZm5OenBuU2gyK2g0UDZWYnMvQlpTOE1qak9tNEoxQjlOdnR0MWplcVh3RT0=');
+
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+
+</script>
     <!-- Chat Widget Above -->
   </body>
 </html>
